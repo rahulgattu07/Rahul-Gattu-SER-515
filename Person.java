@@ -14,7 +14,7 @@ public class Person {
             int i;
         
             while ((i = fr.read()) != -1){
-			System.out.println("Person Cart Items");
+		
              System.out.print((char)i);
 			}
 		}
