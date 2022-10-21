@@ -10,6 +10,7 @@ public class ProduceProductMenu implements ProductMenu {
 		try {
 			BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Rahul Gattu\\Desktop\\DP-zip\\ProductInfo.txt"));
 			String str = br.readLine();
+			int i=0;
 			while (str!=null){
 				StringTokenizer s = new StringTokenizer(str,":");
 				while(s.hasMoreTokens()){
@@ -17,7 +18,7 @@ public class ProduceProductMenu implements ProductMenu {
 					String value = s.nextToken();
 					if(item.equals("Produce"))
 					{
-						
+						i=i+1;
 
 						System.out.println(item +":"+value);
 					}
