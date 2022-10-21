@@ -26,7 +26,10 @@ public class ProduceProductMenu implements ProductMenu {
 				}
 				
 				str=br.readLine();
-			}			
+			}	
+			Person p1 = new Person();
+			System.out.println("Factory pattern implemented");
+			p1.showMenu();			
 		}			
 		catch (IOException e) {
 			// TODO Auto-generated catch block
